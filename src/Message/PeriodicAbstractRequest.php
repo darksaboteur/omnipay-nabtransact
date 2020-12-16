@@ -5,7 +5,7 @@ namespace Omnipay\NABTransact\Message;
 abstract class PeriodicAbstractRequest extends AbstractRequest
 {
     protected $liveEndpoint = 'https://transact.nab.com.au/xmlapi/periodic';
-    protected $testEndpoint = 'https://transact.nab.com.au/xmlapidemo/periodic';
+    protected $testEndpoint = 'https://demo.transact.nab.com.au/xmlapi/periodic';
 
     abstract protected function buildRequestBody(array $data);
 

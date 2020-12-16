@@ -1,10 +1,14 @@
 {
-    "name": "pointybeard/omnipay-nabtransact",
+    "name": "darksaboteur/omnipay-nabtransact",
     "description": "NAB Transact XML API gateway for the Omnipay payment processing library",
     "authors": [
         {
             "email": "hi@alistairkearney.com",
             "name": "pointybeard"
+        },
+        {
+            "name": "Nick Brackley",
+            "email": "darksaboteur89@gmail.com"
         }
     ],
     "keywords": [
@@ -30,7 +34,7 @@
     "autoload": {
         "psr-4": {
             "Omnipay\\NABTransact\\": "src",
-			"Omnipay\\NABTransact\\Tests\\Lib\\": "tests\\lib"
+            "Omnipay\\NABTransact\\Tests\\Lib\\": "tests\\lib"
         }
     }
 }
