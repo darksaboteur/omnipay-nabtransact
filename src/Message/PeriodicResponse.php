@@ -23,7 +23,7 @@ class PeriodicResponse extends AbstractResponse
         328 => 'Invalid Periodic Frequency',
         329 => 'Invalid Number of Payments',
         332 => 'Invalid Date Format',
-        333 => 'Triggered Payment Not Found',
+        333 => 'Stored Card Not Found',
         346 => 'Duplicate CRN Found',
         347 => 'Duplicate Allocated Variable Found',
         504 => 'Invalid Merchant ID',
