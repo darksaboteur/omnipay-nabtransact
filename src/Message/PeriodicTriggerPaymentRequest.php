@@ -114,9 +114,9 @@ final class PeriodicTriggerPaymentRequest extends PeriodicAbstractRequest
         return $data;
     }
 
-    public function validate()
+    public function validate(...$args)
     {
-		$parameterNames = func_get_args()[0];
+		$parameterNames = $args[0];
 
         foreach ($parameterNames as $parameter) {
             parent::validate($parameter);

@@ -45,9 +45,7 @@ abstract class PeriodicAbstractRequest extends AbstractRequest
         $this->setMessageTimestamp(self::generateMessageTimestamp());
         $data['MessageTimestamp'] = $this->getMessageTimestamp();
 
-        $httpResponse = $this->httpClient
-            ->post($this->getEndpoint(), null, $this->buildRequestBody($data))
-            ->send();
+        $httpResponse = $this->httpClient->request('POST', $this->getEndpoint(), [], $this->buildRequestBody($data));
 
         return $this->response = new PeriodicResponse($this, $httpResponse->getBody());
     }
