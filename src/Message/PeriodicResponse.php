@@ -53,7 +53,7 @@ class PeriodicResponse extends AbstractResponse
 
     public function isSuccessful()
     {
-        return ($this->getStatusCode() == 0 && $this->getCode() == '00');
+        return ($this->getStatusCode() == 0 && in_array($this->getCode(), ['00', '08', '11','16']));
     }
 
     public function getMessageId()
